@@ -86,17 +86,56 @@ img {
 header {
   position: relative;
   background-color: #ffffff;
-  text-align: center;
+  /* text-align: center; */
   padding: 10px 0;
   -webkit-box-shadow: 0px 4px 3px -5px rgba(50, 50, 50, 0.91);
   -moz-box-shadow:    0px 4px 3px -5px rgba(50, 50, 50, 0.91);
   box-shadow:         0px 4px 3px -5px rgba(50, 50, 50, 0.91);
 }
 
-/* Layout styling */
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 24px;
+  padding-right: 10px;
+  color: #000000;
+}
+
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1.5px dotted #000000;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
 
 .container {
-  padding: 0 15px;
+  padding: 0 60px;
 }
 
 .row::after {
@@ -135,34 +174,46 @@ nav > ul {
   color: #4a4a4a;
 }
 
+
 #contact, #welcome, #work, button contact, h3, p, ul {
   text-align: center;
   list-style:none;
 }
+
+
 
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 0 13px;
   }
 
   nav {
-    width: auto;
-    float: center;
-    margin-top: 4px;
+      width: auto;
+      float: right;
+      margin-top: 4px;
   }
 
-  .col-md-6 {
-  width: 50%;
+  nav > ul {
+      margin: 0px 0;
   }
 
-  [class*="col-"] {
-    float: left;
+  nav > ul > li {
+      display: inline-block;
   }
-}
+
+  .navtoggle li:not(:last-child) {
+      display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+      display: none;
+  }
+
+
 
 /* ==============================
 Large devices (1024px or larger)

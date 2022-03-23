@@ -13,20 +13,25 @@
   </title>
 </head>
 
-<body id="home">
-  <div class="container">
-    </style>
-    <header>
-      <img class="logo" img src="Images/Logo.png" alt="Jeff UI Logo" </img>
-      <nav>
-        <ul class="navigation">
-          <a href="index.html">Work</a>
-          <a href="about.html">About</a>
-          <a href="vegly.html">Veg.ly</a>
-          <a href="#">Project 2</a>
-          <a href="#">Contact</a>
-      </nav>
-  </div>
+<body>
+  <header>
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html">
+        <img class="logo" src="Images/Logo.png" alt="JeffUIDesigner" />
+      </a>
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="vegly.html">Veg.ly</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <main>
@@ -1378,7 +1383,9 @@
       <p>Copyright Jeff Lloyd|UI|Designer</p>
     </div>
   </footer>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
